@@ -10,7 +10,7 @@ function searchByLocation() {
   // Function to fetch vendors by service
   function searchByService() {
     const service = document.getElementById('serviceInput').value;
-    fetch(`http://localhost:5000/api/vendors/service?service_name=${service}`)
+    fetch(`${backendUrl}/api/vendors/service?service_name=${service}`)
       .then(response => response.json())
       .then(data => displayResults(data))
       .catch(error => console.error('Error:', error));
