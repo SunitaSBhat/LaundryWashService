@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laundry Vendor Search</title>
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Laundry Vendor Search</h1>
+
+    <div class="search">
+      <h3>Search by Location</h3>
+      <input type="text" id="locationInput" placeholder="Enter location (e.g., Hyderabad)">
+      <button onclick="searchByLocation()">Search</button>
+    </div>
+
+    <div class="search">
+      <h3>Search by Service</h3>
+      <input type="text" id="serviceInput" placeholder="Enter service (e.g., Wash)">
+      <button onclick="searchByService()">Search</button>
+    </div>
+
+    <div id="results">
+      <h3>Results:</h3>
+      <ul id="vendorList"></ul>
+    </div>
+  </div>
+
+  <script src="layout.js"></script>
+</body>
+</html>
+
+   
